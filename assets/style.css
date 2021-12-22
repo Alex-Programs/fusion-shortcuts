@@ -33,6 +33,8 @@ body, html {
 
     display: flex;
     justify-content: space-between;
+
+    border-radius: 4px;
 }
 
 .hotkey_name {
@@ -65,8 +67,9 @@ body, html {
 .searchbox input:focus {
     outline: none;
     border: 1px solid #FF6600;
+    border-radius: 4px;
 
-    transition: border 0.05s;
+    transition: border 0.1s;
 }
 
 kbd {
@@ -75,6 +78,7 @@ kbd {
     padding: 3px;
     border-radius: 4px;
     margin: 5px;
+    text-align: center;
 
     font-family: "JetBrains Mono", monospace, sans-serif;
 

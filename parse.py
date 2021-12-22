@@ -25,7 +25,7 @@ class HotkeyCategory():
 
 
 def gen_keydata(raw):
-    raw = raw.strip()
+    raw = raw.strip().replace("CTRL", "Ctrl").replace("ALT", "Alt").replace("SHIFT", "Shift").replace("DEL", "Delete")
 
     def strip_array(arr):
         return [x.strip() for x in arr]
