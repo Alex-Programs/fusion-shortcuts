@@ -23,5 +23,7 @@ def hotkeys_json():
 def assets(path):
     return send_from_directory("assets/", path)
 
-print("Starting")
-serve(app, host="0.0.0.0", port=8072)
+HOST="0.0.0.0"
+PORT=8072
+print(f"Starting on {HOST}:{PORT}")
+serve(app, host=HOST, port=PORT)
