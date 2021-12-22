@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fusion Shortcuts</title>
+
+    <link rel="stylesheet" href="/assets/reset.css">
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/similarity.js"></script>
+    <script src="/assets/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Raleway:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="searchbox">
+    <input type="text" id="search" placeholder="Search..."
+           oninput="renderCategories(document.getElementById('js_fill_in'), this.value)">
+</div>
+
+<!--Inline to make it load first -->
+<style>
+    .spinner {
+        position: fixed;
+        top: calc(50% - 1rem);
+        left: calc(50% - 1rem);
+        width: 8rem;
+        height: 8rem;
+        border: 0.25rem solid #FF6600;
+        border-bottom: 0.25rem solid rgba(0, 0, 0, 0);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+    }
+
+    .spinner--hidden {
+        display: none;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div id="js_fill_in" class="content">
+    <noscript>
+        <h1>JS is required!</h1>
+    </noscript>
+    <div class="spinner"></div>
+</div>
+</body>
+</html>
