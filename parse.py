@@ -2,12 +2,13 @@ import csv
 from dataclasses import dataclass
 
 
+
 @dataclass
 class KeyData:
     raw: str
     # isNice determines whether you use raw or combination
     isNice: bool
-    combination: list[str]
+    combination: list
 
 
 @dataclass
@@ -19,14 +20,14 @@ class Hotkey():
 @dataclass
 class HotkeyCategory():
     name: str
-    hotkeys: list[Hotkey]
+    hotkeys: list
     position: int
 
 
-def gen_keydata(raw: str) -> KeyData:
+def gen_keydata(raw):
     raw = raw.strip()
 
-    def strip_array(arr: list[str]) -> list[str]:
+    def strip_array(arr):
         return [x.strip() for x in arr]
 
     if not " " in raw:
@@ -39,7 +40,7 @@ def gen_keydata(raw: str) -> KeyData:
         return KeyData(raw, False, [raw.strip()])
 
 
-def build_hotkeys(csv_path: str) -> list[HotkeyCategory]:
+def build_hotkeys(csv_path):
     categories = []
     with open(csv_path, "r", encoding="utf8") as file:
         reader = csv.reader(file)
