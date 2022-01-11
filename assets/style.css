@@ -5,6 +5,7 @@ body {
 footer {
     font-family: "JetBrains Mono", "Raleway", sans-serif;
     text-align: center;
+    padding-bottom: 25px;
 }
 
 body, html {
@@ -88,4 +89,13 @@ kbd {
     font-family: "JetBrains Mono", monospace, sans-serif;
 
     box-shadow: 0px 3px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 8px #ffffff;
+}
+
+a {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

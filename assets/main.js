@@ -12,6 +12,8 @@ function renderCategories(element, search) {
     element.innerHTML = "";
     console.log(search)
 
+    let success = false;
+
     categories.forEach(category => {
         let hotkeys;
 
@@ -50,7 +52,11 @@ function renderCategories(element, search) {
         });
 
         element.appendChild(categoryElement);
+
+        success = true;
     })
+
+    document.getElementById("no-data").hidden = success;
 }
 
 function build_fancy_hotkey(key) {
