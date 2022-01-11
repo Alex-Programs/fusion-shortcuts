@@ -1,0 +1,20 @@
+.hotkey {
+    font-size: 16px;
+
+    background-color: transparent;
+
+    border: 2px solid grey;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 0px;
+}
+
+a, hr, .searchbox {
+    display: none;
+}
+
+kbd {
+    box-shadow: none;
+}
