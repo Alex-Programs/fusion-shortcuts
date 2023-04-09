@@ -1,8 +1,6 @@
 import csv
 from dataclasses import dataclass
 
-
-
 @dataclass
 class KeyData:
     raw: str
