@@ -1,0 +1,101 @@
+body {
+    font-family: "Product Sans", "Raleway", sans-serif;
+}
+
+footer {
+    font-family: "JetBrains Mono", "Raleway", sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    max-width: 1000px;
+    padding-top: 25px;
+    margin: auto;
+}
+
+.category {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hotkey {
+    font-size: 24px;
+
+    margin-left: 100px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    padding: 10px;
+
+    background-color: #FF6600;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 4px;
+}
+
+.hotkey_name {
+    text-align: left;
+}
+
+.hotkey_key {
+    text-align: right;
+}
+
+/*-----------------------------------------*/
+
+.searchbox {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.searchbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FF6600;
+    font-size: 24px;
+    font-weight: bold;
+
+    transition: border 0.1s;
+}
+
+.searchbox input:focus {
+    outline: none;
+    border: 1px solid #FF6600;
+    border-radius: 4px;
+
+    transition: border 0.1s;
+}
+
+kbd {
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+
+    font-family: "JetBrains Mono", monospace, sans-serif;
+
+    box-shadow: 0px 3px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 8px #ffffff;
+}
+
+a {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
